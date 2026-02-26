@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/beauty-catalogue/static/css/main.4f44b0ad.css",
+    "main.js": "/beauty-catalogue/static/js/main.dff4762c.js",
+    "index.html": "/beauty-catalogue/index.html",
+    "main.4f44b0ad.css.map": "/beauty-catalogue/static/css/main.4f44b0ad.css.map",
+    "main.dff4762c.js.map": "/beauty-catalogue/static/js/main.dff4762c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f44b0ad.css",
+    "static/js/main.dff4762c.js"
+  ]
+}
