@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/beauty-catalogue/static/css/main.4f44b0ad.css",
-    "main.js": "/beauty-catalogue/static/js/main.f5289cb9.js",
+    "main.css": "/beauty-catalogue/static/css/main.3fc8c000.css",
+    "main.js": "/beauty-catalogue/static/js/main.64091c2f.js",
     "index.html": "/beauty-catalogue/index.html",
-    "main.4f44b0ad.css.map": "/beauty-catalogue/static/css/main.4f44b0ad.css.map",
-    "main.f5289cb9.js.map": "/beauty-catalogue/static/js/main.f5289cb9.js.map"
+    "main.3fc8c000.css.map": "/beauty-catalogue/static/css/main.3fc8c000.css.map",
+    "main.64091c2f.js.map": "/beauty-catalogue/static/js/main.64091c2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f44b0ad.css",
-    "static/js/main.f5289cb9.js"
+    "static/css/main.3fc8c000.css",
+    "static/js/main.64091c2f.js"
   ]
 }
