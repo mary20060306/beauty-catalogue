@@ -50,7 +50,7 @@ body {
 
 /* ===== SECTION PRODUITS ===== */
 .produits-section {
-  padding: 40px 60px; /* espace dakhli */
+  padding: 60px 50px;
 }
 
 /* Titre dial section */
@@ -69,17 +69,18 @@ body {
 
 /* ===== CARTE PRODUIT ===== */
 .produit-card {
-  background: #fff;
+  background: white;
   border-radius: 18px;
   padding: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  transition: all 0.35s ease;
 }
 
 /* Hover dial carte */
 .produit-card:hover {
-  transform: translateY(-8px); /* carte katl3 */
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 /* Box dial image */
@@ -91,10 +92,14 @@ body {
 .image-box img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* image matkhrojch */
+  object-fit: cover;
   border-radius: 14px;
+  transition: transform 0.3s ease;
+  filter: brightness(0.98);
 }
-
+.produit-card:hover img{
+transform:scale(1.05);
+}
 /* Badge dial categorie */
 .badge {
   position: absolute;
@@ -155,4 +160,196 @@ body {
   padding: 20px;
   text-align: center;
   background: #f7f3f0;
+}
+/*hadik l page dial l filter */
+produits-section {
+  padding: 60px 50px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:1000;
+}
+
+.modal{
+background:white;
+padding:25px;
+border-radius:12px;
+max-width:450px;
+width:90%;
+max-height:90vh;
+overflow:auto;
+text-align:center;
+position:relative;
+}
+
+.modal img{
+width:100%;
+max-height:320px;
+object-fit:contain;
+}
+
+.close-btn{
+position:absolute;
+top:10px;
+right:10px;
+border:none;
+background:red;
+color:white;
+width:30px;
+height:30px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.whatsapp-btn{
+display:block;
+margin-top:10px;
+background:linear-gradient(135deg,#25D366,#1ebe5d);
+color:white;
+text-align:center;
+padding:10px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.05);
+}
+.filters button.active{
+background:#000;
+color:white;
+}
+@media (max-width:600px){
+
+.produits-section{
+padding:30px 10px;
+}
+
+.produits-container{
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.produit-card{
+padding:10px;
+}
+
+.produit-card h3{
+font-size:13px;
+}
+
+.prix{
+font-size:13px;
+}
+
+.image-box img{
+height:120px;
+}
+
+}
+/* ===== BEST SELLER SECTION ===== */
+
+.best-wrapper{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.best-container{
+display:flex;
+gap:18px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:20px 0;
+}
+
+.best-container::-webkit-scrollbar{
+display:none;
+}
+
+/* تصغير الكارت */
+.best-container .produit-card{
+min-width:200px;
+max-width:200px;
+padding:12px;
+}
+
+/* تصغير الصورة */
+.best-container .image-box img{
+height:150px;
+}
+
+/* تصغير النص */
+.best-container h3{
+font-size:15px;
+}
+
+.best-container .prix{
+font-size:14px;
+}
+
+/* ===== scroll arrows ===== */
+
+.scroll-btn{
+position:absolute;
+top:45%;
+transform:translateY(-50%);
+background:white;
+border:none;
+width:40px;
+height:40px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+cursor:pointer;
+font-size:18px;
+}
+
+.scroll-left{
+left:-10px;
+}
+
+.scroll-right{
+right:-10px;
+}
+
+.scroll-btn:hover{
+background:#c0392b;
+color:white;
 }

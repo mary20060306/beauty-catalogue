@@ -1,37 +1,36 @@
-// Hada howa component ProduitCard
-// kayakhod produit men props (ja men component parent)
-export default function ProduitCard({ produit }) {
+export default function ProduitCard({ produit, onClick }) {
+
+const phone = "212616070861";
+
+const message = `سلام، بغيت نطلب  معلومات  أكثر على هاد المنتج :${produit.nom}`;
+
+const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
   return (
-    // Carte principale dial produit
-    <div className="produit-card">
+    <div className="produit-card" onClick={onClick}>
 
-      {/* Box dial image */}
       <div className="image-box">
-
-        {/* Image dial produit */}
         <img src={produit.image} alt={produit.nom} />
-
-        {/* Badge li kaybayan categorie dial produit */}
         <span className="badge">{produit.categorie}</span>
       </div>
 
-      {/* Smiyat dial produit */}
-      <h3>{produit.nom}</h3>
-
-      {/* Description dial produit */}
-      <p className="description">{produit.description}</p>
-
-      {/* Infos zyada b7al poids w prix */}
+     <h3>{produit.nom}</h3>   
       <div className="infos">
-
-        {/* Poids dial produit */}
         <span className="poids">{produit.poids}</span>
-
-        {/* Prix dial produit */}
         <span className="prix">{produit.prix} DH</span>
       </div>
 
-      
+      {/* زر واتساب */}
+      <a 
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-btn"
+        onClick={(e) => e.stopPropagation()}
+      >
+        Commander WhatsApp
+      </a>
+
     </div>
   );
 }
