@@ -1,5 +1,5 @@
 // Kan-importiw tableau dial produits li fih ma3loumat dial kol produit
-import { produits } from './produit';
+// import { produits } from './produit';
 
 // Kan-importiw component ProduitCard li kaymattel carte dial produit
 // import ProduitCard from './ProduitCard';

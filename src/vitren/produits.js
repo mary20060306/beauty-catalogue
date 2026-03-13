@@ -38,7 +38,7 @@ categorie === "Tous"
 : produits.filter(p => p.categorie === categorie);
 
 const bestProduits = produits.filter(p => p.bestSeller);
-
+console.log(bestProduits)
 return (
 <section className="produits-section">
 {/* ⭐ الأكثر مبيعاً

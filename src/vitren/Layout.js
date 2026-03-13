@@ -14,7 +14,7 @@ export function Header() {
        
 
         {/* Lien dial page Produits */}
-        <a href="#">🧴 Produits</a>
+        <a href="/">🧴 Produits</a>
 
        
       </nav>
