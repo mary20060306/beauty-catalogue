@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/beauty-catalogue/static/css/main.3fc8c000.css",
-    "main.js": "/beauty-catalogue/static/js/main.64091c2f.js",
+    "main.css": "/beauty-catalogue/static/css/main.93918cd1.css",
+    "main.js": "/beauty-catalogue/static/js/main.d84c59fb.js",
+    "static/js/796.978d0518.chunk.js": "/beauty-catalogue/static/js/796.978d0518.chunk.js",
+    "static/js/165.8de380f9.chunk.js": "/beauty-catalogue/static/js/165.8de380f9.chunk.js",
     "index.html": "/beauty-catalogue/index.html",
-    "main.3fc8c000.css.map": "/beauty-catalogue/static/css/main.3fc8c000.css.map",
-    "main.64091c2f.js.map": "/beauty-catalogue/static/js/main.64091c2f.js.map"
+    "main.93918cd1.css.map": "/beauty-catalogue/static/css/main.93918cd1.css.map",
+    "main.d84c59fb.js.map": "/beauty-catalogue/static/js/main.d84c59fb.js.map",
+    "796.978d0518.chunk.js.map": "/beauty-catalogue/static/js/796.978d0518.chunk.js.map",
+    "165.8de380f9.chunk.js.map": "/beauty-catalogue/static/js/165.8de380f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fc8c000.css",
-    "static/js/main.64091c2f.js"
+    "static/css/main.93918cd1.css",
+    "static/js/main.d84c59fb.js"
   ]
 }
